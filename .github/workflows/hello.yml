@@ -5,7 +5,8 @@ on:
     branches: [main]
 
 jobs:
-runs-on: 
   greet:
-    -name: say hello to username
-    run: echo "$user"
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello to username
+        run: echo "hello $USER"
